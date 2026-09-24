@@ -10,7 +10,7 @@ const userConfig = {
     // --- Identity ---
     name: "Atique Ahmad",
     handle: "atique-ahmad-01",
-    tagline: "ML/AI Engineer — LLMs, fine-tuning, RAG & agentic AI systems",
+    tagline: "Machine Learning & Full-Stack Engineer — LLM fine-tuning, RAG & AI agents",
     location: "Lahore, PK",
     availability: "open to ML/AI & full-stack AI roles",
 
@@ -23,26 +23,26 @@ const userConfig = {
 
     // --- Bio (short + long) ---
     bioShort:
-        "ML/AI Engineer building reliable LLM systems — from fine-tuning small language models to \
-        catch hallucinations, to shipping production RAG and agentic pipelines.",
+        "ML & full-stack engineer who takes AI from training to production — fine-tuned models that \
+        outperform GPT-5 at catching hallucinations, served on vLLM and AWS, inside products people use.",
     bioLong: [
-        "I'm an ML/AI Engineer with two years of experience taking AI systems from research to production \
-         — model fine-tuning, RAG pipelines, and the agentic infrastructure that keeps LLM outputs reliable. \
-         I'm currently pursuing an MS in Data Science at ITU Lahore, building on a BS in Computer Engineering \
-         from the same university.",
+        "I'm a software engineer with 3+ years of experience across machine learning, LLMs and full-stack \
+         development. At Paradigm Networks I build the systems that keep AI outputs reliable, and I'm \
+         completing an MS in Data Science at ITU Lahore, building on a BS in Computer Engineering from the \
+         same university.",
 
-        "My work spans classical ML and deep learning — CNNs, RNNs, Transformers — through to modern GenAI: \
-         fine-tuning LLMs and SLMs, building RAG pipelines, and, most recently, training small language \
-         models to detect hallucinations in RAG outputs before they reach a user. I work primarily in \
-         PyTorch and TensorFlow, with the Python data stack underneath.",
+        "I fine-tune small language models for RAG reliability. My factuality detector, an IBM Granite model \
+         trained with LoRA on 10K in-house samples, reaches 91.7% accuracy and outperforms GPT-5, Gemini and \
+         Claude on the same test set, at a fraction of the cost.",
 
-        "I don't stop at the model. I build the FastAPI/Django backends that serve it and the React \
-         frontends that surface it, containerize with Docker, and deploy on AWS and Azure with CI/CD end \
-         to end — so I can take an AI feature from a training script to something a user actually touches.",
+        "I don't stop at the model. I serve models on vLLM behind async FastAPI, package them as hardened \
+         Docker images and ship them to AWS EKS through CI/CD. I also build the evaluation platform that \
+         scores every AI-agent run, LangGraph agents like our PR code reviewer, and the Go and React services \
+         that tie it all together.",
 
-        "Right now I'm most interested in the reliability side of LLMs — hallucination detection, \
-         evaluation, and agentic systems — and I'm open to ML/AI and full-stack AI roles, as well as \
-         research and PhD opportunities."
+        "My research is on retrieval-augmented reasoning for small LLMs: retrieving reasoning from an 8B \
+         teacher lifted a 1.7B model from 75.0% to 85.4% accuracy. I'm open to ML/AI and full-stack AI roles, \
+         and to research opportunities."
     ],
 
     // --- Experience ---
@@ -52,17 +52,19 @@ const userConfig = {
     experience: [
         {
             role: "Software Engineer",
-            org: "Paradigm Networks (eBricks-inc)",
+            org: "Paradigm Networks",
             logoDomain: "paradigmnetworks.ai",
-            period: "Nov 2023 — Present",
+            period: "Jan 2023 — Present",
             location: "Remote",
             highlights: [
-                "Developed and maintained LLM-based messaging applications using advanced AI techniques, from fine-tuning through production deployment.",
-                "Built agentic evaluation and verification services that fact-check and score LLM outputs for hallucination and factuality before they reach users.",
-                "Extended the evaluation pipeline beyond final-output checks to score agent trajectories — tool selection, reasoning steps, and task completion — catching failures earlier in multi-step agentic workflows.",
-                "Reduced CPU consumption on inference workloads and deployed solutions across AWS and Azure cloud platforms.",
-                "Designed larger-scale database integrations and automation processes for business pipelines.",
-                "Contributed to open-source development and evaluated LLM solutions for performance optimization."
+                "Owned the full pipeline for a RAG factuality detector: fine-tuned IBM Granite Guardian 3.1 (2B) with rsLoRA and a custom prompt-loss-weighted trainer, reaching 91.7% accuracy and 86.7% F1 and beating GPT-5 on the same test set.",
+                "Co-developed a hallucination detector (98.1% F1) trained on 74K open-source and in-house samples, and owned its production serving.",
+                "Deployed both models as GPU microservices: vLLM behind async FastAPI, multi-stage distroless Docker images with weights from S3, shipped via CodeBuild/ECR and GitHub Actions to AWS EKS.",
+                "Architected the agentic evaluation platform that scores every AI-agent run from its execution trace across 9 metrics, with local judges that match GPT-5 on 89% of plan-quality verdicts.",
+                "Built RAG verification APIs (chunk-level verification, answer relevancy, faithfulness) with multi-cloud LLM support across AWS Bedrock, GCP Vertex AI, Azure OpenAI and OpenAI.",
+                "Built a LangGraph PR code-review agent, traced with LangSmith and benchmarked against CodeRabbit.",
+                "Integrated evaluation end to end across the Go control server, the LangGraph agent platform and the React/TypeScript web app.",
+                "Built full-stack services and REST APIs with Django/DRF and React, optimizing queries and caching for performance."
             ]
         },
         {
@@ -74,18 +76,6 @@ const userConfig = {
             highlights: [
                 "Lectured students on mobile application development and modern frameworks.",
                 "Provided hands-on project support and guided final exercises."
-            ]
-        },
-        {
-            role: "Associate Software Engineer",
-            org: "MetaApp",
-            logoDomain: "metaapp.com",
-            period: "May 2023 — Nov 2023",
-            location: "Lahore, PK",
-            highlights: [
-                "Built end-to-end MetaApp services using Django and React.js for cross-platform applications.",
-                "Developed multi-functional integrated systems/APIs using DRF and enhanced data security.",
-                "Improved application performance by optimizing queries and implementing caching."
             ]
         },
         {
@@ -133,10 +123,49 @@ const userConfig = {
     projects: [
         {
             name: "Hallucination & Factuality Detection in LLMs",
-            year: "2025",
-            tags: ["PyTorch", "Transformers", "HuggingFace", "Fine-tuning", "RAG", "NLP"],
+            year: "2026",
+            tags: ["PyTorch", "LoRA / PEFT", "IBM Granite", "ModernBERT", "vLLM", "RAG"],
             description:
-                "Research project fine-tuning 4 small language models (IBM Granite 3.1, Mistral Ministral, ModernBERT Large, Vectara HHEM) on a custom 10K RAG dataset to detect hallucinations in LLM responses via binary classification."
+                "Fine-tuned small language models that judge whether a RAG answer is grounded in its context. The Granite factuality model reaches 91.7% accuracy (GPT-5: 86.3%) and the hallucination model 98.1% F1, evaluated across 9 public benchmarks and served in production with vLLM."
+        },
+        {
+            name: "Agentic Evaluation Platform",
+            year: "2026",
+            tags: ["FastAPI", "MongoDB", "DeepEval", "LLM-as-judge", "Go", "React"],
+            description:
+                "Production service that scores every AI-agent run from its execution trace on task success, plan quality, workflow completion, hallucination, toxicity and latency. Local small-model judges match GPT-5 on 89% of plan-quality verdicts, cutting dependence on paid APIs."
+        },
+        {
+            name: "Retrieval-Augmented Reasoning for Small LLMs",
+            year: "2026",
+            tags: ["vLLM", "FAISS", "Embeddings", "Qwen3", "Research"],
+            description:
+                "Turns Qwen3-8B teacher solutions into an embedding memory bank and a 600K-edge reasoning graph, then injects retrieved reasoning into a Qwen3-1.7B student. Gated retrieval lifts accuracy from 75.0% to 85.4%; also reproduces Retrieval-of-Thought (arXiv:2509.21743) with controlled ablations."
+        },
+        {
+            name: "LangGraph PR Review Agent",
+            year: "2026",
+            tags: ["LangGraph", "LangChain", "LangSmith", "AI Agents"],
+            description:
+                "Multi-step code-review agent that analyses pull-request diffs and publishes review findings, traced with LangSmith and benchmarked against CodeRabbit on verified ground truth."
+        },
+        {
+            name: "Player Engagement Prediction",
+            year: "2026",
+            tags: ["XGBoost", "Scikit-learn", "Kalman Filters", "Statistics"],
+            description:
+                "Statistical and ML analysis of online gaming behaviour: an XGBoost classifier predicts player engagement level at 91.7% accuracy, compared against decision tree, random forest and logistic regression, plus Kalman-filter modelling.",
+            link: "https://github.com/atique-ahmad-01/ml-statistical-gaming-analysis",
+            srcUrl: "https://github.com/atique-ahmad-01/ml-statistical-gaming-analysis"
+        },
+        {
+            name: "E-commerce Sales Prediction",
+            year: "2026",
+            tags: ["Python", "Scikit-learn", "Random Forest", "Regression"],
+            description:
+                "End-to-end regression pipeline on the UCI Online Retail dataset; a random forest model reaches R² 0.985, benchmarked against gradient boosting, linear, ridge and lasso regression.",
+            link: "https://github.com/atique-ahmad-01/ecommerce-sales-analysis-prediction",
+            srcUrl: "https://github.com/atique-ahmad-01/ecommerce-sales-analysis-prediction"
         },
         {
             name: "LLM-Based Messaging Platform",
@@ -227,26 +256,27 @@ const userConfig = {
     // --- Skills (grouped per CV Technical Skills section) ---
     stack: {
         languages: [
-            "Python", "JavaScript", "SQL", "Golang"
-        ],
-        frameworks: [
-            "Django", "FastAPI", "Flask", "React.js"
-        ],
-        "deep learning": [
-            "PyTorch", "TensorFlow", "PyTorch Lightning", "Transformers (HF)"
+            "Python", "Go", "TypeScript", "JavaScript", "SQL"
         ],
         "llm / genai": [
-            "LLM Fine-tuning", "SLM Training", "RAG Pipelines", "Hallucination Detection",
-            "Prompt Engineering", "LangChain", "PEFT / LoRA", "vLLM / Ollama"
+            "LLM Fine-tuning", "PEFT / LoRA", "RAG", "AI Agents", "LLM Evaluation",
+            "Prompt Engineering", "LangChain", "LangGraph", "LangSmith", "DeepEval", "RAGAS"
         ],
-        databases: [
-            "MongoDB", "MySQL", "PostgreSQL", "Redis"
+        "deep learning": [
+            "PyTorch", "Transformers (HF)", "TRL", "TensorFlow", "Computer Vision", "NLP"
         ],
-        "cloud & devops": [
-            "AWS (EC2, S3, Lambda)", "Azure", "Docker", "CI/CD", "Git"
+        "ml & data": [
+            "Scikit-learn", "XGBoost", "FAISS", "Pandas", "NumPy", "Tableau", "Power BI"
         ],
-        "data science": [
-            "Pandas", "NumPy", "Scikit-learn", "Statistical Modeling", "Feature Engineering", "NLP"
+        backend: [
+            "FastAPI", "Django / DRF", "REST APIs", "MongoDB", "PostgreSQL", "MySQL", "Redis"
+        ],
+        frontend: [
+            "React", "Next.js", "Tailwind CSS", "HTML / CSS"
+        ],
+        "mlops & cloud": [
+            "vLLM", "Docker", "Kubernetes (EKS)", "Helm", "GitHub Actions",
+            "AWS (S3, ECR, EKS, Bedrock)", "GCP Vertex AI", "Azure OpenAI"
         ]
     },
 
@@ -263,11 +293,6 @@ const userConfig = {
             name: "Information Technology University",
             url: "https://itu.edu.pk",
             logoDomain: "itu.edu.pk"
-        },
-        {
-            name: "MetaApp",
-            url: "https://metaapp.com",
-            logoDomain: "metaapp.com"
         },
         {
             name: "Clicky.pk",
