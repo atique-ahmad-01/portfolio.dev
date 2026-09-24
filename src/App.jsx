@@ -242,8 +242,22 @@ const App = () => {
         <main className="flex-grow">
           <Suspense fallback={<PageLoader />}>
             <Routes>
+              {/* The portfolio is public: it renders from userConfig and only
+                  adds live GitHub activity when a visitor has signed in. */}
+              <Route path="/" element={<Navigate to="/home" replace />} />
               <Route
-                path="/"
+                path="/home"
+                element={
+                  <HomePage
+                    data={data}
+                    username={username}
+                    token={token}
+                    contributionData={contributionData}
+                  />
+                }
+              />
+              <Route
+                path="/login"
                 element={
                   data ? (
                     <Navigate to="/home" replace />
@@ -253,31 +267,16 @@ const App = () => {
                 }
               />
               <Route
-                path="/home"
-                element={
-                  data ? (
-                    <HomePage
-                      data={data}
-                      username={username}
-                      token={token}
-                      contributionData={contributionData}
-                    />
-                  ) : (
-                    <Navigate to="/" replace />
-                  )
-                }
-              />
-              <Route
                 path="/profile"
                 element={
-                  data ? <ProfilePage data={data} /> : <Navigate to="/" replace />
+                  data ? <ProfilePage data={data} /> : <Navigate to="/login" replace />
                 }
               />
             </Routes>
           </Suspense>
         </main>
 
-        {data && <Footer />}
+        <Footer />
 
         {/* Global Floating AI Chatbot */}
         {data && <GitMeChat data={data} />}
