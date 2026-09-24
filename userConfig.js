@@ -79,7 +79,7 @@ const userConfig = {
             ]
         },
         {
-            role: "Full Stack Developer & Intern",
+            role: "Software Engineer Intern",
             org: "Clicky.pk",
             logoDomain: "clicky.pk",
             period: "Jan 2022 — Oct 2022",
