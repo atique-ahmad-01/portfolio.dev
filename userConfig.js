@@ -10,9 +10,9 @@ const userConfig = {
     // --- Identity ---
     name: "Atique Ahmad",
     handle: "atique-ahmad-01",
-    tagline: "Machine Learning & Full-Stack Engineer — LLM fine-tuning, RAG & AI agents",
+    tagline: "Machine Learning Engineer — LLM fine-tuning, RAG & agentic systems",
     location: "Lahore, PK",
-    availability: "open to ML/AI & full-stack AI roles",
+    availability: "open to machine learning & LLM engineering roles",
 
     // --- Contact ---
     email: "engr.atique.ahmad@gmail.com",
@@ -23,17 +23,17 @@ const userConfig = {
 
     // --- Bio (short + long) ---
     bioShort:
-        "ML & full-stack engineer who takes AI from training to production — fine-tuned models that \
+        "Machine learning engineer who takes models from training to production — fine-tuned models that \
         outperform GPT-5 at catching hallucinations, served on vLLM and AWS, inside products people use.",
     bioLong: [
-        "I'm a software engineer with 3+ years of experience across machine learning, LLMs and full-stack \
-         development. At Paradigm Networks I build the systems that keep AI outputs reliable, and I'm \
-         completing an MS in Data Science at ITU Lahore, building on a BS in Computer Engineering from the \
-         same university.",
+        "I'm a machine learning engineer with 3+ years of experience building language-model systems that \
+         run in production. At Paradigm Networks I build the models and services that keep AI outputs \
+         reliable, from fine-tuning through deployment.",
 
-        "I fine-tune small language models for RAG reliability. My factuality detector, an IBM Granite model \
-         trained with LoRA on 10K in-house samples, reaches 91.7% accuracy and outperforms GPT-5, Gemini and \
-         Claude on the same test set, at a fraction of the cost.",
+        "I developed a factuality model that checks whether an AI answer is backed by its source documents. \
+         I led a team in curating 10,000 in-house data points, fine-tuned IBM Granite Guardian 3.1 (2B) with \
+         LoRA, and reached 91.7% accuracy, ahead of GPT-5 (86.3%) and Claude 3 Sonnet (74.9%) at a fraction \
+         of their size.",
 
         "I don't stop at the model. I serve models on vLLM behind async FastAPI, package them as hardened \
          Docker images and ship them to AWS EKS through CI/CD. I also build the evaluation platform that \
@@ -41,8 +41,8 @@ const userConfig = {
          that tie it all together.",
 
         "My research is on retrieval-augmented reasoning for small LLMs: retrieving reasoning from an 8B \
-         teacher lifted a 1.7B model from 75.0% to 85.4% accuracy. I'm open to ML/AI and full-stack AI roles, \
-         and to research opportunities."
+         teacher lifted a 1.7B model from 75.0% to 85.4% accuracy. I'm open to machine learning and LLM \
+         engineering roles, and to research opportunities."
     ],
 
     // --- Experience ---
@@ -51,14 +51,16 @@ const userConfig = {
     // to fall back to an initials monogram.
     experience: [
         {
-            role: "Software Engineer",
+            role: "Machine Learning Engineer",
             org: "Paradigm Networks",
             logoDomain: "paradigmnetworks.ai",
             period: "Jan 2023 — Present",
             location: "Remote",
             highlights: [
-                "Owned the full pipeline for a RAG factuality detector: fine-tuned IBM Granite Guardian 3.1 (2B) with rsLoRA and a custom prompt-loss-weighted trainer, reaching 91.7% accuracy and 86.7% F1 and beating GPT-5 on the same test set.",
-                "Co-developed a hallucination detector (98.1% F1) trained on 74K open-source and in-house samples, and owned its production serving.",
+                "Factuality model: developed a model that checks whether AI-generated answers are supported by their source documents, so unsupported claims are caught before they reach users.",
+                "Led a team in curating a custom dataset of 10,000 in-house data points, then fine-tuned IBM Granite Guardian 3.1 (2B) with LoRA using PyTorch and Hugging Face (Transformers, TRL, PEFT), replacing an earlier ModernBERT prototype.",
+                "Reached 91.7% accuracy and 86.7% F1, ahead of GPT-5 (86.3%, +5.4 pts) and Claude 3 Sonnet (74.9%, +16.8 pts), and shipped it as a production API on AWS powering the platform's response-verification checks.",
+                "Hallucination model: led a team in curating 10,000 in-house data points, combined with 64K open-source samples, and co-developed a two-phase fine-tuned Granite detector reaching 98.1% F1 and 97.5% accuracy; owned its production serving.",
                 "Deployed both models as GPU microservices: vLLM behind async FastAPI, multi-stage distroless Docker images with weights from S3, shipped via CodeBuild/ECR and GitHub Actions to AWS EKS.",
                 "Architected the agentic evaluation platform that scores every AI-agent run from its execution trace across 9 metrics, with local judges that match GPT-5 on 89% of plan-quality verdicts.",
                 "Built RAG verification APIs (chunk-level verification, answer relevancy, faithfulness) with multi-cloud LLM support across AWS Bedrock, GCP Vertex AI, Azure OpenAI and OpenAI.",
@@ -79,7 +81,7 @@ const userConfig = {
             ]
         },
         {
-            role: "Software Engineer Intern",
+            role: "Full-Stack Developer Intern",
             org: "Clicky.pk",
             logoDomain: "clicky.pk",
             period: "Jan 2022 — Oct 2022",
@@ -108,7 +110,7 @@ const userConfig = {
             logoDomain: "itu.edu.pk",
             period: "2019 — 2023",
             location: "Lahore, PK",
-            note: "Foundation in software engineering, algorithms, data structures, database systems, and AI/ML."
+            note: "Foundation in software engineering, algorithms, data structures, database systems, and machine learning."
         }
     ],
 
