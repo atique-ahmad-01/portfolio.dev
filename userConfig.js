@@ -10,7 +10,7 @@ const userConfig = {
     // --- Identity ---
     name: "Atique Ahmad",
     handle: "atique-ahmad-01",
-    tagline: "Machine Learning Engineer — LLM fine-tuning, RAG & agentic systems",
+    tagline: "AI/ML Engineer & Full-Stack Developer — LLM fine-tuning, RAG & agentic systems",
     location: "Lahore, PK",
     availability: "open to machine learning & LLM engineering roles",
 
