@@ -118,7 +118,7 @@ usually the whole task. Full schema:
 
   // --- Bio ---
   bioShort: string,
-  bioLong:  string[],       // rendered as separate <p>s in About
+  bioLong:  (string | string[])[], // strings → <p>s, nested arrays → bullet lists in About
 
   // --- Experience (timeline entries, reverse-chron) ---
   experience: [

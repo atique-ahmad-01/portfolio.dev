@@ -12,7 +12,7 @@ const userConfig = {
     handle: "atique-ahmad-01",
     tagline: "AI/ML Engineer & Full-Stack Developer — LLM fine-tuning, RAG & agentic systems",
     location: "Lahore, PK",
-    availability: "open to machine learning & LLM engineering roles",
+    availability: "open to AI/ML engineering & full-stack AI roles",
 
     // --- Contact ---
     email: "engr.atique.ahmad@gmail.com",
@@ -23,26 +23,45 @@ const userConfig = {
 
     // --- Bio (short + long) ---
     bioShort:
-        "Machine learning engineer who takes models from training to production — fine-tuned models that \
-        outperform GPT-5 at catching hallucinations, served on vLLM and AWS, inside products people use.",
+        "AI/ML engineer and full-stack developer who takes language-model systems from training to production — \
+        fine-tuning, RAG, hallucination detection, and agent evaluation, served on vLLM and AWS.",
+    // Strings render as paragraphs; a nested array renders as a bullet list.
     bioLong: [
-        "I'm a machine learning engineer with 3+ years of experience building language-model systems that \
-         run in production. At Paradigm Networks I build the models and services that keep AI outputs \
-         reliable, from fine-tuning through deployment.",
+        "I am an AI/ML engineer and full-stack developer with 4 years of experience building and deploying \
+         production-grade AI systems, with a focus on generative AI, language models, agentic systems, \
+         retrieval-augmented generation, and AI evaluation.",
 
-        "I developed a factuality model that checks whether an AI answer is backed by its source documents. \
-         I led a team in curating 10,000 in-house data points, fine-tuned IBM Granite Guardian 3.1 (2B) with \
-         LoRA, and reached 91.7% accuracy, ahead of GPT-5 (86.3%) and Claude 3 Sonnet (74.9%) at a fraction \
-         of their size.",
+        "My work focuses on building AI systems that are accurate, reliable, and practical for real-world use. \
+         I have experience across the AI development lifecycle, from data preparation and model fine-tuning to \
+         evaluation, model serving, application development, and cloud deployment.",
 
-        "I don't stop at the model. I serve models on vLLM behind async FastAPI, package them as hardened \
-         Docker images and ship them to AWS EKS through CI/CD. I also build the evaluation platform that \
-         scores every AI-agent run, LangGraph agents like our PR code reviewer, and the Go and React services \
-         that tie it all together.",
+        "My current work involves developing and deploying language-model systems, with a particular interest \
+         in improving the reliability of AI-generated outputs. I work with LLM fine-tuning, retrieval-augmented \
+         generation, hallucination and factuality detection, agent evaluation, and production AI infrastructure.",
 
-        "My research is on retrieval-augmented reasoning for small LLMs: retrieving reasoning from an 8B \
-         teacher lifted a 1.7B model from 75.0% to 85.4% accuracy. I'm open to machine learning and LLM \
-         engineering roles, and to research opportunities."
+        "I also explore research problems around retrieval-augmented reasoning for smaller language models, \
+         with the goal of making capable AI systems more efficient and practical to deploy.",
+
+        "My technical experience includes:",
+
+        [
+            "Generative AI, LLMs, and Agentic AI",
+            "LLM Fine-Tuning and Parameter-Efficient Training",
+            "Retrieval-Augmented Generation and Reasoning",
+            "AI Evaluation, Factuality, and Hallucination Detection",
+            "Model Serving and Production Deployment",
+            "Python, PyTorch, and Hugging Face",
+            "LangChain, LangGraph, DeepEval, and vLLM",
+            "FastAPI, React, and TypeScript",
+            "Docker, Kubernetes, and Cloud Infrastructure",
+            "AWS, GCP, and Azure",
+        ],
+
+        "I enjoy working at the intersection of AI research, engineering, and product development—turning \
+         emerging AI techniques into reliable systems that can be deployed and used effectively in real-world \
+         applications.",
+
+        "Open to AI/ML engineering and full-stack AI roles."
     ],
 
     // --- Experience ---

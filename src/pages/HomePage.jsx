@@ -287,9 +287,17 @@ const HomePage = ({ data }) => {
                 <section className="mt-14">
                     <SectionHeader id="about" label="about" />
                     <div className="space-y-4 text-[15.5px] leading-[1.7] text-github-text/95">
-                        {userConfig.bioLong.map((p, i) => (
-                            <p key={i}>{p}</p>
-                        ))}
+                        {userConfig.bioLong.map((p, i) =>
+                            Array.isArray(p) ? (
+                                <ul key={i} className="list-disc pl-5 space-y-1">
+                                    {p.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p key={i}>{p}</p>
+                            )
+                        )}
                     </div>
                 </section>
 

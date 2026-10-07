@@ -63,7 +63,9 @@ const buildPortfolioBrief = (cfg, ghData) => {
         lines.push('## Bio');
         if (cfg.bioShort) lines.push(cfg.bioShort);
         if (Array.isArray(cfg.bioLong)) {
-            cfg.bioLong.forEach((p) => lines.push(p));
+            cfg.bioLong.forEach((p) =>
+                Array.isArray(p) ? p.forEach((x) => lines.push(`- ${x}`)) : lines.push(p)
+            );
         }
     }
 
