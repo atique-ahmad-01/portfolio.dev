@@ -143,6 +143,15 @@ const userConfig = {
     // (`srcLabel`, `downloadLabel`, `prsLabel`) — e.g. `prsLabel: "7 PRs"`.
     projects: [
         {
+            name: "TRACE — AI Security & Compliance Platform",
+            year: "2026",
+            tags: ["LangGraph", "MCP", "RAG", "FastAPI", "Next.js", "AI Agents"],
+            description:
+                "Open-source platform that scans repositories with Trivy, Semgrep, OSV and Gitleaks, enriches findings with CVE intelligence (NVD, GitHub Advisories, CISA KEV), and uses a LangGraph multi-agent workflow with RAG and permissioned MCP tools to investigate each finding with cited evidence. Fixes are applied only after human approval and verified by re-scanning; includes an evaluation harness comparing base, RAG and agentic-RAG modes.",
+            link: "https://trace-psi-gules.vercel.app",
+            srcUrl: "https://github.com/atique-ahmad-01/trace"
+        },
+        {
             name: "Hallucination & Factuality Detection in LLMs",
             year: "2026",
             tags: ["PyTorch", "LoRA / PEFT", "IBM Granite", "ModernBERT", "vLLM", "RAG"],
