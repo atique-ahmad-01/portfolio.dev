@@ -10,9 +10,9 @@ const userConfig = {
     // --- Identity ---
     name: "Atique Ahmad",
     handle: "atique-ahmad-01",
-    tagline: "AI/ML Engineer & Full-Stack Developer — LLM fine-tuning, RAG & agentic systems",
-    location: "Lahore, PK",
-    availability: "open to AI/ML engineering & full-stack AI roles",
+    tagline: "AI/ML Engineer & Dataset Team Lead — Generative AI, LLMs, RAG & AI agents",
+    location: "",
+    availability: "open to AI/ML, GenAI & AI agent engineering roles",
 
     // --- Contact ---
     email: "engr.atique.ahmad@gmail.com",
@@ -23,45 +23,42 @@ const userConfig = {
 
     // --- Bio (short + long) ---
     bioShort:
-        "AI/ML engineer and full-stack developer who takes language-model systems from training to production — \
-        fine-tuning, RAG, hallucination detection, and agent evaluation, served on vLLM and AWS.",
+        "AI/ML Engineer and Dataset Team Lead who builds production generative AI from raw, unstructured data to \
+        trusted AI features — fine-tuning, RAG, LangGraph agents, and the evaluation that keeps output grounded.",
     // Strings render as paragraphs; a nested array renders as a bullet list.
     bioLong: [
-        "I am an AI/ML engineer and full-stack developer with 4 years of experience building and deploying \
-         production-grade AI systems, with a focus on generative AI, language models, agentic systems, \
-         retrieval-augmented generation, and AI evaluation.",
+        "AI/ML Engineer and Dataset Team Lead with nearly 4 years across full-stack development, backend and data \
+         engineering, progressing into applied AI and generative AI.",
 
-        "My work focuses on building AI systems that are accurate, reliable, and practical for real-world use. \
-         I have experience across the AI development lifecycle, from data preparation and model fine-tuning to \
-         evaluation, model serving, application development, and cloud deployment.",
+        "I build the whole path from raw, unstructured data to governed AI systems: document-processing pipelines, \
+         dataset curation, fine-tuning, retrieval-augmented generation, LangGraph agents, human-in-the-loop \
+         validation, and the evaluation that keeps output trustworthy.",
 
-        "My current work involves developing and deploying language-model systems, with a particular interest \
-         in improving the reliability of AI-generated outputs. I work with LLM fine-tuning, retrieval-augmented \
-         generation, hallucination and factuality detection, agent evaluation, and production AI infrastructure.",
-
-        "I also explore research problems around retrieval-augmented reasoning for smaller language models, \
-         with the goal of making capable AI systems more efficient and practical to deploy.",
-
-        "My technical experience includes:",
+        "Highlights:",
 
         [
-            "Generative AI, LLMs, and Agentic AI",
-            "LLM Fine-Tuning and Parameter-Efficient Training",
-            "Retrieval-Augmented Generation and Reasoning",
-            "AI Evaluation, Factuality, and Hallucination Detection",
-            "Model Serving and Production Deployment",
-            "Python, PyTorch, and Hugging Face",
-            "LangChain, LangGraph, DeepEval, and vLLM",
-            "FastAPI, React, and TypeScript",
-            "Docker, Kubernetes, and Cloud Infrastructure",
-            "AWS, GCP, and Azure",
+            "Fine-tuned a 2B-parameter model that beats GPT-5 by 5.4 points on factuality detection (91.7% accuracy)",
+            "Trained a hallucination detector to 98.1% F1, running in production on vLLM",
+            "Led the dataset team that curated 20,000+ labelled records powering two production models",
+            "Built TRACE, an open-source AI security platform with LangGraph agents, MCP tools and human-approved fixes",
         ],
 
-        "I enjoy working at the intersection of AI research, engineering, and product development—turning \
-         emerging AI techniques into reliable systems that can be deployed and used effectively in real-world \
-         applications.",
+        "My core skills:",
 
-        "Open to AI/ML engineering and full-stack AI roles."
+        [
+            "AI Agents — LangChain, LangGraph, LangSmith, MCP",
+            "GenAI & LLMs — OpenAI, Anthropic Claude, Gemini, RAG, prompt engineering",
+            "Fine-Tuning — LoRA, QLoRA, PEFT, Hugging Face Transformers, vLLM",
+            "LLM Evaluation — DeepEval, RAGAS, hallucination and groundedness checks, guardrails",
+            "Machine Learning — scikit-learn, PyTorch, deep learning, NLP",
+            "Backend & Data — Python, FastAPI, Django REST Framework, ETL, PostgreSQL, MongoDB, Redis",
+            "Cloud & MLOps — AWS, Azure, GCP, Docker, Kubernetes, GitHub Actions, CI/CD",
+        ],
+
+        "Tenacious about evaluation rigor and audit-ready governance for sensitive data (PII, PHI, SOC 2), \
+         with excellent writing and documentation skills.",
+
+        "Open to AI/ML Engineer, GenAI Engineer and AI Agent Engineer roles."
     ],
 
     // --- Experience ---
@@ -70,7 +67,7 @@ const userConfig = {
     // to fall back to an initials monogram.
     experience: [
         {
-            role: "Machine Learning Engineer",
+            role: "AI/ML Engineer & Dataset Team Lead",
             org: "Paradigm Networks",
             logoDomain: "paradigmnetworks.ai",
             period: "Jan 2023 — Present",
@@ -85,26 +82,27 @@ const userConfig = {
                 "Built RAG verification APIs (chunk-level verification, answer relevancy, faithfulness) with multi-cloud LLM support across AWS Bedrock, GCP Vertex AI, Azure OpenAI and OpenAI.",
                 "Built a LangGraph PR code-review agent, traced with LangSmith and benchmarked against CodeRabbit.",
                 "Integrated evaluation end to end across the Go control server, the LangGraph agent platform and the React/TypeScript web app.",
-                "Built full-stack services and REST APIs with Django/DRF and React, optimizing queries and caching for performance."
+                "Built full-stack services and REST APIs with Django/DRF and React, optimizing queries and caching for performance.",
+                "Engineered guardrails — groundedness and hallucination checks, PII redaction and prompt-injection defense — gating every release that touched sensitive data.",
+                "Partnered with data scientists and with business, risk and compliance stakeholders on annotation guidelines, retraining loops and validation of AI outputs.",
+                "Shipped continuously with Git, Jira, Agile Scrum and CI/CD on GitHub Actions."
             ]
         },
         {
-            role: "Lab Engineer",
+            role: "Teaching Assistant / Lab Engineer",
             org: "Information Technology University (ITU)",
             logoDomain: "itu.edu.pk",
             period: "Jan 2024 — Jul 2024",
-            location: "Lahore, PK",
             highlights: [
                 "Lectured students on mobile application development and modern frameworks.",
                 "Provided hands-on project support and guided final exercises."
             ]
         },
         {
-            role: "Full-Stack Developer Intern",
+            role: "Full-Stack Developer",
             org: "Clicky.pk",
             logoDomain: "clicky.pk",
             period: "Jan 2022 — Oct 2022",
-            location: "Lahore, PK",
             highlights: [
                 "Developed full-scale business solutions using Django and Node.js.",
                 "Delivered responsive and user-engaging interfaces with modern frameworks.",
@@ -120,7 +118,6 @@ const userConfig = {
             degree: "MS Data Science",
             logoDomain: "itu.edu.pk",
             period: "2025 — Present",
-            location: "Lahore, PK",
             note: "Focus on machine learning, deep learning, statistical modeling, data analytics, and scalable AI systems."
         },
         {
@@ -128,7 +125,6 @@ const userConfig = {
             degree: "BS Computer Engineering",
             logoDomain: "itu.edu.pk",
             period: "2019 — 2023",
-            location: "Lahore, PK",
             note: "Foundation in software engineering, algorithms, data structures, database systems, and machine learning."
         }
     ],
@@ -286,27 +282,38 @@ const userConfig = {
     // --- Skills (grouped per CV Technical Skills section) ---
     stack: {
         languages: [
-            "Python", "Go", "TypeScript", "JavaScript", "SQL"
+            "Python", "SQL", "TypeScript", "Go", "JavaScript"
         ],
-        "llm / genai": [
-            "LLM Fine-tuning", "PEFT / LoRA", "RAG", "AI Agents", "LLM Evaluation",
-            "Prompt Engineering", "LangChain", "LangGraph", "LangSmith", "DeepEval", "RAGAS"
+        "ai agents": [
+            "LangChain", "LangGraph", "LangSmith", "MCP", "Multi-Agent Workflows", "Human-in-the-Loop"
         ],
-        "deep learning": [
-            "PyTorch", "Transformers (HF)", "TRL", "TensorFlow", "Computer Vision", "NLP"
+        "genai / llms": [
+            "OpenAI", "Anthropic Claude", "Gemini", "RAG", "Prompt Engineering",
+            "Fine-tuning (LoRA, QLoRA, PEFT)", "vLLM"
         ],
-        "ml & data": [
-            "Scikit-learn", "XGBoost", "FAISS", "Pandas", "NumPy", "Tableau", "Power BI"
+        "llm evaluation": [
+            "DeepEval", "RAGAS", "Hallucination Checks", "Groundedness", "Guardrails"
+        ],
+        "machine learning": [
+            "Scikit-learn", "Transformers (HF)", "PyTorch", "Deep Learning", "NLP"
+        ],
+        "data engineering": [
+            "ETL / ELT", "Pandas", "NumPy", "Data Pipelines"
         ],
         backend: [
-            "FastAPI", "Django / DRF", "REST APIs", "MongoDB", "PostgreSQL", "MySQL", "Redis"
+            "FastAPI", "Django / DRF", "REST APIs"
         ],
         frontend: [
-            "React", "Next.js", "Tailwind CSS", "HTML / CSS"
+            "React", "Next.js", "Tailwind CSS"
         ],
-        "mlops & cloud": [
-            "vLLM", "Docker", "Kubernetes (EKS)", "Helm", "GitHub Actions",
-            "AWS (S3, ECR, EKS, Bedrock)", "GCP Vertex AI", "Azure OpenAI"
+        databases: [
+            "PostgreSQL", "MongoDB", "Redis", "FAISS", "Qdrant"
+        ],
+        "cloud & mlops": [
+            "AWS", "Azure", "GCP", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "MLOps"
+        ],
+        compliance: [
+            "PII", "PHI", "SOC 2"
         ]
     },
 

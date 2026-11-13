@@ -228,9 +228,11 @@ const HomePage = ({ data }) => {
                         </p>
 
                         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] font-mono text-github-text-secondary">
-                            <span className="flex items-center gap-1.5">
-                                <MapPin size={12} /> {userConfig.location}
-                            </span>
+                            {userConfig.location && (
+                                <span className="flex items-center gap-1.5">
+                                    <MapPin size={12} /> {userConfig.location}
+                                </span>
+                            )}
                             <span className="flex items-center gap-1.5 text-github-status-open">
                                 <Radio size={12} className="animate-pulse" />
                                 {userConfig.availability}
@@ -353,10 +355,12 @@ const HomePage = ({ data }) => {
                                             </div>
                                             <div className="text-[13.5px] text-github-text-link">
                                                 {exp.org}
-                                                <span className="text-github-text-secondary">
-                                                    {' '}
-                                                    · {exp.location}
-                                                </span>
+                                                {exp.location && (
+                                                    <span className="text-github-text-secondary">
+                                                        {' '}
+                                                        · {exp.location}
+                                                    </span>
+                                                )}
                                             </div>
                                         </div>
                                     </div>
