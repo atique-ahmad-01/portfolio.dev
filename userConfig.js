@@ -35,15 +35,6 @@ const userConfig = {
          dataset curation, fine-tuning, retrieval-augmented generation, LangGraph agents, human-in-the-loop \
          validation, and the evaluation that keeps output trustworthy.",
 
-        "Highlights:",
-
-        [
-            "Fine-tuned a 2B-parameter model that beats GPT-5 by 5.4 points on factuality detection (91.7% accuracy)",
-            "Trained a hallucination detector to 98.1% F1, running in production on vLLM",
-            "Led the dataset team that curated 20,000+ labelled records powering two production models",
-            "Built TRACE, an open-source AI security platform with LangGraph agents, MCP tools and human-approved fixes",
-        ],
-
         "My core skills:",
 
         [
