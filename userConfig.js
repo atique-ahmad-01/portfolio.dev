@@ -38,13 +38,16 @@ const userConfig = {
         "My core skills:",
 
         [
-            "AI Agents — LangChain, LangGraph, LangSmith, MCP",
-            "GenAI & LLMs — OpenAI, Anthropic Claude, Gemini, RAG, prompt engineering",
+            "AI Agents — LangChain, LangGraph, LangSmith, MCP, multi-agent workflows, human-in-the-loop",
+            "GenAI & LLMs — OpenAI, Anthropic Claude, Gemini, RAG, embedding models, prompt engineering",
             "Fine-Tuning — LoRA, QLoRA, PEFT, Hugging Face Transformers, vLLM",
-            "LLM Evaluation — DeepEval, RAGAS, hallucination and groundedness checks, guardrails",
-            "Machine Learning — scikit-learn, PyTorch, deep learning, NLP",
-            "Backend & Data — Python, FastAPI, Django REST Framework, ETL, PostgreSQL, MongoDB, Redis",
-            "Cloud & MLOps — AWS, Azure, GCP, Docker, Kubernetes, GitHub Actions, CI/CD",
+            "LLM Evaluation — DeepEval, RAGAS, LLM-as-judge, hallucination and groundedness checks, guardrails",
+            "Machine Learning — PyTorch, scikit-learn, deep learning, NLP",
+            "Backend — Python, Go, SQL, FastAPI, Django REST Framework, async, pytest, REST APIs",
+            "Data — Pandas, NumPy, ETL pipelines, PostgreSQL, MongoDB, Redis, FAISS, Qdrant",
+            "Frontend — React.js, Next.js, TypeScript, JavaScript, Tailwind CSS",
+            "Cloud & MLOps — AWS (S3, EKS, Bedrock), GCP Vertex AI, Azure OpenAI, RunPod, Docker, Kubernetes, GitHub Actions, CI/CD",
+            "Security — Semgrep, Trivy, Gitleaks, CVE intelligence, prompt-injection testing, PII masking",
         ],
 
         "Tenacious about evaluation rigor and audit-ready governance for sensitive data (PII, PHI, SOC 2), \
@@ -339,17 +342,17 @@ const userConfig = {
     // --- Skills (grouped per CV Technical Skills section) ---
     stack: {
         languages: [
-            "Python", "SQL", "TypeScript", "Go", "JavaScript"
+            "Python", "Go", "SQL", "TypeScript", "JavaScript"
         ],
         "ai agents": [
             "LangChain", "LangGraph", "LangSmith", "MCP", "Multi-Agent Workflows", "Human-in-the-Loop"
         ],
         "genai / llms": [
-            "OpenAI", "Anthropic Claude", "Gemini", "RAG", "Prompt Engineering",
+            "OpenAI", "Anthropic Claude", "Gemini", "RAG", "Embedding Models", "Prompt Engineering",
             "Fine-tuning (LoRA, QLoRA, PEFT)", "vLLM"
         ],
         "llm evaluation": [
-            "DeepEval", "RAGAS", "Hallucination Checks", "Groundedness", "Guardrails"
+            "DeepEval", "RAGAS", "LLM-as-Judge", "Hallucination Checks", "Groundedness", "Guardrails"
         ],
         "machine learning": [
             "Scikit-learn", "Transformers (HF)", "PyTorch", "Deep Learning", "NLP"
@@ -358,16 +361,19 @@ const userConfig = {
             "ETL / ELT", "Pandas", "NumPy", "Data Pipelines"
         ],
         backend: [
-            "FastAPI", "Django / DRF", "REST APIs"
+            "FastAPI", "Django / DRF", "REST APIs", "Async", "pytest"
         ],
         frontend: [
-            "React", "Next.js", "Tailwind CSS"
+            "React.js", "Next.js", "TypeScript", "Tailwind CSS"
         ],
         databases: [
             "PostgreSQL", "MongoDB", "Redis", "FAISS", "Qdrant"
         ],
         "cloud & mlops": [
-            "AWS", "Azure", "GCP", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "MLOps"
+            "AWS (S3, EKS, Bedrock)", "GCP Vertex AI", "Azure OpenAI", "RunPod", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "MLOps"
+        ],
+        security: [
+            "Semgrep", "Trivy", "Gitleaks", "CVE Intelligence", "Prompt-Injection Testing", "PII Masking"
         ],
         compliance: [
             "PII", "PHI", "SOC 2"
