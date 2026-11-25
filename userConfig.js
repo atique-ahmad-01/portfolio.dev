@@ -145,7 +145,7 @@ const userConfig = {
             tags: ["LangGraph", "MCP", "RAG", "FastAPI", "Next.js", "AI Agents"],
             description:
                 "Open-source platform that scans repositories with Trivy, Semgrep, OSV and Gitleaks, enriches findings with CVE intelligence (NVD, GitHub Advisories, CISA KEV), and uses a LangGraph multi-agent workflow with RAG and permissioned MCP tools to investigate each finding with cited evidence. Fixes are applied only after human approval and verified by re-scanning; includes an evaluation harness comparing base, RAG and agentic-RAG modes.",
-            link: "https://trace-psi-gules.vercel.app",
+            link: "https://trace-psi.me",
             srcUrl: "https://github.com/atique-ahmad-01/trace"
         },
         {
@@ -174,6 +174,35 @@ const userConfig = {
                 "Extracts validated JSON from construction change orders, with a confidence score and source quote for each field, and routes inconsistent documents to human review.",
             link: "https://github.com/atique-ahmad-01/co-extract",
             srcUrl: "https://github.com/atique-ahmad-01/co-extract"
+        },
+        {
+            name: "Open Source — DeepEval",
+            year: "2026",
+            tags: ["Open Source", "LLM Evaluation", "Python", "Benchmarks"],
+            description:
+                "Contributor to DeepEval, the open-source LLM evaluation framework: added the HaluEval hallucination benchmark.",
+            link: "https://github.com/confident-ai/deepeval",
+            srcUrl: "https://github.com/confident-ai/deepeval",
+            prsUrl: "https://github.com/confident-ai/deepeval/pulls?q=is%3Apr+author%3Aatique-ahmad-01"
+        },
+        {
+            name: "Open Source — lightly",
+            year: "2026",
+            tags: ["Open Source", "Self-Supervised Learning", "PyTorch"],
+            description:
+                "Contributor to lightly, the self-supervised learning library: added type annotations for the kNN classifier.",
+            link: "https://github.com/lightly-ai/lightly",
+            srcUrl: "https://github.com/lightly-ai/lightly",
+            prsUrl: "https://github.com/lightly-ai/lightly/pulls?q=is%3Apr+author%3Aatique-ahmad-01"
+        },
+        {
+            name: "Cloud Gaming Latency Prediction",
+            year: "2024",
+            tags: ["Python", "Machine Learning", "Research", "IEEE"],
+            description:
+                "Code for the IEEE ICAICCIT 2024 paper on reducing latency in cloud gaming through prediction and system-level solutions.",
+            link: "https://doi.org/10.1109/ICAICCIT64383.2024.10912118",
+            srcUrl: "https://github.com/atique-ahmad-01/cloud-gaming-latency-prediction"
         },
         {
             name: "Hallucination & Factuality Detection in LLMs",
@@ -299,7 +328,16 @@ const userConfig = {
     //   publishedIn     → the specific place
     //   publishedInUrl  → optional link on the publisher name
     //   date, authors, link → the paper itself
-    publications: [],
+    publications: [
+        {
+            title: "Advancing Cloud Gaming: Addressing Latency Challenges through Research and Innovative Solutions",
+            venue: "Conference Paper",
+            publishedIn: "IEEE ICAICCIT 2024",
+            publishedInUrl: "https://doi.org/10.1109/ICAICCIT64383.2024.10912118",
+            date: "2024",
+            link: "https://doi.org/10.1109/ICAICCIT64383.2024.10912118"
+        }
+    ],
 
     // --- Writings / Blogs ---
     blogs: [],
