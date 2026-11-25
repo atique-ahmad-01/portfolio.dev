@@ -149,6 +149,33 @@ const userConfig = {
             srcUrl: "https://github.com/atique-ahmad-01/trace"
         },
         {
+            name: "PII Guardrail — Classical vs Quantum ML",
+            year: "2026",
+            tags: ["PyTorch", "Hugging Face", "DeBERTa", "LoRA", "PennyLane", "Quantum ML"],
+            description:
+                "Guardrail that hides personal data before text reaches an LLM: a fast gate flags risky text, then a fine-tuned DeBERTa masker (also Qwen2.5 and SmolLM2 with LoRA) reaches 0.917 F1 with a 1.1% leak rate. Compares an 8-qubit variational quantum classifier with classical baselines under exact, finite-shot and noisy simulation — it matched logistic regression (0.933 vs 0.934 ROC-AUC) and showed a barren plateau.",
+            link: "https://pii-guardrail.streamlit.app",
+            srcUrl: "https://github.com/atique-ahmad-01/pii-guardrail-qml"
+        },
+        {
+            name: "Urdu-MiniGPT — Language Model from Scratch",
+            year: "2026",
+            tags: ["PyTorch", "SentencePiece", "Transformers", "Streamlit"],
+            description:
+                "Trained a SentencePiece Unigram tokenizer and a 5.8M-parameter decoder-only Transformer on Urdu news text with no pretrained weights; tuned with a 14-run sweep and evaluated on perplexity and next-token accuracy.",
+            link: "https://urdu-minigpt.streamlit.app",
+            srcUrl: "https://github.com/atique-ahmad-01/Urdu-MiniGPT"
+        },
+        {
+            name: "co-extract — LLM Document Extraction",
+            year: "2026",
+            tags: ["OpenAI", "Anthropic Claude", "JSON Schema", "Python"],
+            description:
+                "Extracts validated JSON from construction change orders, with a confidence score and source quote for each field, and routes inconsistent documents to human review.",
+            link: "https://github.com/atique-ahmad-01/co-extract",
+            srcUrl: "https://github.com/atique-ahmad-01/co-extract"
+        },
+        {
             name: "Hallucination & Factuality Detection in LLMs",
             year: "2026",
             tags: ["PyTorch", "LoRA / PEFT", "IBM Granite", "ModernBERT", "vLLM", "RAG"],
