@@ -17,6 +17,7 @@ import {
     Download,
     ChevronDown,
     ChevronUp,
+    CalendarDays,
 } from 'lucide-react';
 import userConfig from '../../userConfig';
 import Logo from '../components/Logo';
@@ -262,6 +263,16 @@ const HomePage = ({ data }) => {
                             >
                                 <Mail size={13} /> email
                             </a>
+                            {userConfig.meetingLink && (
+                                <a
+                                    href={userConfig.meetingLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono border border-github-border rounded-sm hover:border-github-text-secondary hover:bg-github-bg-secondary transition-colors"
+                                >
+                                    <CalendarDays size={13} /> book a call
+                                </a>
+                            )}
                             <a
                                 href={resumeUrl}
                                 target="_blank"

@@ -17,6 +17,7 @@ const userConfig = {
     // --- Contact ---
     email: "engr.atique.ahmad@gmail.com",
     website: "https://www.atique-ahmad.site",
+    meetingLink: "https://cal.com/atique-ahmad",
     linkedin: "https://www.linkedin.com/in/atiqueahmad/",
     github: "https://github.com/atique-ahmad-01",
     cvUsername: "atique-ahmad-01",
