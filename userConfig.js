@@ -131,6 +131,20 @@ const userConfig = {
     // (`srcLabel`, `downloadLabel`, `prsLabel`) — e.g. `prsLabel: "7 PRs"`.
     projects: [
         {
+            name: "Fine-Tuned Hallucination & Factuality Detection Models",
+            year: "2026",
+            tags: ["Fine-Tuning", "LoRA / PEFT", "IBM Granite 2B", "PyTorch", "vLLM", "RAG"],
+            description:
+                "Fine-tuned IBM Granite (2B) with LoRA to check whether an LLM's answer is supported by its source documents. Factuality model: 91.7% accuracy, beating GPT-5 (86.3%). Hallucination model: 98.1% F1. Trained on 20,000+ curated records, tested on 9 public benchmarks, and running in production on vLLM."
+        },
+        {
+            name: "Agentic Evaluation Platform",
+            year: "2026",
+            tags: ["FastAPI", "MongoDB", "DeepEval", "LLM-as-judge", "Go", "React"],
+            description:
+                "Production service that scores every AI-agent run from its execution trace on task success, plan quality, workflow completion, hallucination, toxicity and latency. Local small-model judges match GPT-5 on 89% of plan-quality verdicts, cutting dependence on paid APIs."
+        },
+        {
             name: "TRACE — AI Security & Compliance Platform",
             year: "2026",
             tags: ["LangGraph", "MCP", "RAG", "FastAPI", "Next.js", "AI Agents"],
@@ -149,6 +163,13 @@ const userConfig = {
             srcUrl: "https://github.com/atique-ahmad-01/pii-guardrail-qml"
         },
         {
+            name: "Retrieval-Augmented Reasoning for Small LLMs",
+            year: "2026",
+            tags: ["vLLM", "FAISS", "Embeddings", "Qwen3", "Research"],
+            description:
+                "Turns Qwen3-8B teacher solutions into an embedding memory bank and a 600K-edge reasoning graph, then injects retrieved reasoning into a Qwen3-1.7B student. Gated retrieval lifts accuracy from 75.0% to 85.4%; also reproduces Retrieval-of-Thought (arXiv:2509.21743) with controlled ablations."
+        },
+        {
             name: "Urdu-MiniGPT — Language Model from Scratch",
             year: "2026",
             tags: ["PyTorch", "SentencePiece", "Transformers", "Streamlit"],
@@ -156,6 +177,13 @@ const userConfig = {
                 "Trained a SentencePiece Unigram tokenizer and a 5.8M-parameter decoder-only Transformer on Urdu news text with no pretrained weights; tuned with a 14-run sweep and evaluated on perplexity and next-token accuracy.",
             link: "https://urdu-minigpt.streamlit.app",
             srcUrl: "https://github.com/atique-ahmad-01/Urdu-MiniGPT"
+        },
+        {
+            name: "LangGraph PR Review Agent",
+            year: "2026",
+            tags: ["LangGraph", "LangChain", "LangSmith", "AI Agents"],
+            description:
+                "Multi-step code-review agent that analyses pull-request diffs and publishes review findings, traced with LangSmith and benchmarked against CodeRabbit on verified ground truth."
         },
         {
             name: "co-extract — LLM Document Extraction",
@@ -194,34 +222,6 @@ const userConfig = {
                 "Code for the IEEE ICAICCIT 2024 paper on reducing latency in cloud gaming through prediction and system-level solutions.",
             link: "https://doi.org/10.1109/ICAICCIT64383.2024.10912118",
             srcUrl: "https://github.com/atique-ahmad-01/cloud-gaming-latency-prediction"
-        },
-        {
-            name: "Hallucination & Factuality Detection in LLMs",
-            year: "2026",
-            tags: ["PyTorch", "LoRA / PEFT", "IBM Granite", "ModernBERT", "vLLM", "RAG"],
-            description:
-                "Fine-tuned small language models that judge whether a RAG answer is grounded in its context. The Granite factuality model reaches 91.7% accuracy (GPT-5: 86.3%) and the hallucination model 98.1% F1, evaluated across 9 public benchmarks and served in production with vLLM."
-        },
-        {
-            name: "Agentic Evaluation Platform",
-            year: "2026",
-            tags: ["FastAPI", "MongoDB", "DeepEval", "LLM-as-judge", "Go", "React"],
-            description:
-                "Production service that scores every AI-agent run from its execution trace on task success, plan quality, workflow completion, hallucination, toxicity and latency. Local small-model judges match GPT-5 on 89% of plan-quality verdicts, cutting dependence on paid APIs."
-        },
-        {
-            name: "Retrieval-Augmented Reasoning for Small LLMs",
-            year: "2026",
-            tags: ["vLLM", "FAISS", "Embeddings", "Qwen3", "Research"],
-            description:
-                "Turns Qwen3-8B teacher solutions into an embedding memory bank and a 600K-edge reasoning graph, then injects retrieved reasoning into a Qwen3-1.7B student. Gated retrieval lifts accuracy from 75.0% to 85.4%; also reproduces Retrieval-of-Thought (arXiv:2509.21743) with controlled ablations."
-        },
-        {
-            name: "LangGraph PR Review Agent",
-            year: "2026",
-            tags: ["LangGraph", "LangChain", "LangSmith", "AI Agents"],
-            description:
-                "Multi-step code-review agent that analyses pull-request diffs and publishes review findings, traced with LangSmith and benchmarked against CodeRabbit on verified ground truth."
         },
         {
             name: "Player Engagement Prediction",

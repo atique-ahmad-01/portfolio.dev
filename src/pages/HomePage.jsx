@@ -175,6 +175,7 @@ const useUptime = () => {
 
 const PUBS_DEFAULT = 4;
 const BLOGS_DEFAULT = 3;
+const PROJECTS_DEFAULT = 6;
 
 const HomePage = ({ data }) => {
     const uptime = useUptime();
@@ -183,6 +184,12 @@ const HomePage = ({ data }) => {
 
     const [pubsExpanded, setPubsExpanded] = useState(false);
     const [blogsExpanded, setBlogsExpanded] = useState(false);
+    const [projectsExpanded, setProjectsExpanded] = useState(false);
+
+    const allProjects = userConfig.projects || [];
+    const visibleProjects = projectsExpanded
+        ? allProjects
+        : allProjects.slice(0, PROJECTS_DEFAULT);
 
     const allPublications = userConfig.publications || [];
     const allBlogs = userConfig.blogs || [];
@@ -441,7 +448,7 @@ const HomePage = ({ data }) => {
                 <section className="mt-16">
                     <SectionHeader id="projects" label="selected work" />
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        {userConfig.projects.map((p) => (
+                        {visibleProjects.map((p) => (
                             <div
                                 key={p.name}
                                 className="group flex flex-col p-4 border border-github-border/70 rounded-sm bg-github-bg-secondary/40 hover:border-github-status-open/40 transition-colors"
@@ -521,6 +528,27 @@ const HomePage = ({ data }) => {
                             </div>
                         ))}
                     </div>
+                    {allProjects.length > PROJECTS_DEFAULT && (
+                        <div className="mt-5 flex justify-center">
+                            <button
+                                type="button"
+                                onClick={() => setProjectsExpanded((v) => !v)}
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-github-border bg-github-bg-secondary/60 text-[13.5px] font-mono text-github-text hover:border-github-status-open/50 hover:text-github-status-open hover:bg-github-status-open/5 transition-colors"
+                            >
+                                {projectsExpanded ? (
+                                    <>
+                                        <ChevronUp size={16} />
+                                        <span>view less</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <ChevronDown size={16} />
+                                        <span>view more ({allProjects.length - PROJECTS_DEFAULT})</span>
+                                    </>
+                                )}
+                            </button>
+                        </div>
+                    )}
                 </section>
 
                 {/* -------------------- PUBLICATIONS -------------------- */}
